@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        PlayerLifePoints = System.Convert.ToString(PlayerHealth.PlayerLife);
-        life.GetComponent<TextMesh>().text = PlayerLifePoints;
+//        PlayerLifePoints = System.Convert.ToString(PlayerHealth.PlayerLife);
+//        life.GetComponent<TextMesh>().text = PlayerLifePoints;
     }
 }

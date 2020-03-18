@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int PlayerLife = 100;
+   // public int PlayerLife = 100;
 
     void OnCollisionEnter(Collision collision)
     {
