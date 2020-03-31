@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] NavMeshAgent Enemy;
     void Start()
     {
-        Enemy = GetComponent<NavMeshAgent>();
+        //Enemy = GetComponent<NavMeshAgent>();
         PlayerLocation = Enemy.destination;
     }
 

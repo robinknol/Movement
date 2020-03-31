@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abbf854edcd27164799c25fd490ca067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerLife: 100
 --- !u!208 &110771611
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -162,7 +163,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.25, y: 0.25, z: 0.25}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -590,7 +591,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108193143}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbcce2ba8f3a4e943841b14fe82e19fb, type: 3}
   m_Name: 
@@ -767,6 +768,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -553898881221462579, guid: 0467bb04d3cf21a45af5057eddee08f8,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4780373355618522450, guid: 0467bb04d3cf21a45af5057eddee08f8,
         type: 3}
       propertyPath: Player
@@ -775,6 +781,11 @@ PrefabInstance:
     - target: {fileID: 4780373355618522452, guid: 0467bb04d3cf21a45af5057eddee08f8,
         type: 3}
       propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780373355618522452, guid: 0467bb04d3cf21a45af5057eddee08f8,
+        type: 3}
+      propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4780373355618522462, guid: 0467bb04d3cf21a45af5057eddee08f8,
@@ -841,10 +852,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2125612654884904871, guid: 46cf4bc341decb140ba96c015ac11e4a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125612655101013808, guid: 46cf4bc341decb140ba96c015ac11e4a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185019294069435814, guid: 46cf4bc341decb140ba96c015ac11e4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6185019294684631908, guid: 46cf4bc341decb140ba96c015ac11e4a,
         type: 3}
       propertyPath: m_Name
       value: envoirment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185019294684631908, guid: 46cf4bc341decb140ba96c015ac11e4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6185019294684631931, guid: 46cf4bc341decb140ba96c015ac11e4a,
         type: 3}
@@ -1083,12 +1114,12 @@ PrefabInstance:
     - target: {fileID: 5266111896202976219, guid: 59fb927f37bea814cba99a33a024bd6d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 200
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 5266111896202976219, guid: 59fb927f37bea814cba99a33a024bd6d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5266111896202976219, guid: 59fb927f37bea814cba99a33a024bd6d,
         type: 3}
