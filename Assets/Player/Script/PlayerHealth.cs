@@ -1,25 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int PlayerLife = 100;
-    [SerializeField] GameObject life;
-    void Update()
+    protected int x = 100;
+    public int PlayerLife
     {
-        life.GetComponent<TextMesh>().text = System.Convert.ToString(PlayerLife);
-    }
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            PlayerLife -= 10;
-        }
+        get { return x; }
+        set { x = value; }
     }
 
-    public int test()
-    {
-        return PlayerLife;
-    }
+
+    //[SerializeField] GameObject life;
+   // void Update()
+    //{
+       // life.GetComponent<TextMesh>().text = System.Convert.ToString(PlayerLife);
+        //if (PlayerLife == 0)
+        //{
+        //    SceneManager.LoadScene(sceneName:"Death");
+        //}
+    //}
 }
