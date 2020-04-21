@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3591151991689211291}
   - component: {fileID: 8230206880271850966}
   m_Layer: 0
-  m_Name: Spawnpoint
+  m_Name: Spawnpointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -8,6 +8,8 @@ public class Movement : MonoBehaviour
 
     private CharacterController _characterController;
 
+    public DirectionShot something;
+
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
@@ -22,5 +24,15 @@ public class Movement : MonoBehaviour
 
         // transform.Translate(inputDirection * _speed * Time.deltaTime);
         _characterController.Move(inputDirection * _speed * Time.deltaTime);
+
+
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            something.isFiring = true;
+        }
+        else
+        {
+            something.isFiring = false;
+        }
     }
 }
