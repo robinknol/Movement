@@ -487,6 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbcce2ba8f3a4e943841b14fe82e19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
 --- !u!1001 &485995540253258082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -498,13 +499,9 @@ PrefabInstance:
       propertyPath: life
       value: 
       objectReference: {fileID: 289321789}
-    - target: {fileID: 1877699612, guid: d368ac8cf47f8f84690c530268f89316, type: 3}
-      propertyPath: timeBetweenShots
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1877699612, guid: d368ac8cf47f8f84690c530268f89316, type: 3}
-      propertyPath: bulletSpeed
-      value: 7
+    - target: {fileID: 110771610, guid: d368ac8cf47f8f84690c530268f89316, type: 3}
+      propertyPath: maxHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 890403731008179783, guid: d368ac8cf47f8f84690c530268f89316,
         type: 3}
@@ -649,6 +646,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1387615162, guid: 0467bb04d3cf21a45af5057eddee08f8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4780373355618522450, guid: 0467bb04d3cf21a45af5057eddee08f8,
         type: 3}
       propertyPath: Player

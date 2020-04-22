@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : Health
 {
-    Health Health = new Health();
+    //Health Health = new Health();
     [SerializeField] GameObject life;
 
     void Update()
     {
-        if (Health.PlayerLife <= 0)
+        if (LifePoints <= 0)
         {
             SceneManager.LoadScene("Death");
         }
-        life.GetComponent<TextMesh>().text = System.Convert.ToString(Health.PlayerLife);
+        life.GetComponent<TextMesh>().text = System.Convert.ToString(LifePoints);
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Health.PlayerLife -= 10;
+            LifePoints -= 10;
             Destroy(collision.gameObject);
         }
     }

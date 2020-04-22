@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    protected int MainEnemy = 10;
-    public int EnemyLife
-    {
-        get { return MainEnemy; }
-        set { MainEnemy = value; }
-    }
+    public int maxHealth;
+    //protected int MainEnemy = 10;
+    //public int EnemyLife
+    //{
+    //    get { return MainEnemy; }
+    //    set { MainEnemy = value; }
+    //}
 
-    protected int PlayerHealth = 100;
-    public int PlayerLife
+    //protected int health = 100;
+    public int LifePoints
     {
-        get { return PlayerHealth; }
-        set { PlayerHealth = value; }
+        get { return maxHealth; }
+        set { maxHealth = value; }
     }
 }

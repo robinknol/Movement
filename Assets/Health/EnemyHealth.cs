@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class EnemyHealth : Health
 {
-    Health Health = new Health();
     void Update()
     {
-        if (Health.EnemyLife <= 0)
+        if (LifePoints <= 0)
         {
             Destroy(this.gameObject);
         }
@@ -17,7 +16,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            Health.EnemyLife -= 10;
+            LifePoints -= 10;
             Destroy(collision.gameObject);
         }
     }
